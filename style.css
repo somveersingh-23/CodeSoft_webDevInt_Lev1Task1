@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com./css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com./css2?family=Varela+Round&displa=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.TopNav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+
+    color: white;
+    height: 40px;
+    width: 100%;
+    background: linear-gradient(90deg, rgb(250, 141, 7), rgb(232, 9, 158));
+}
+.TopNav #icons{
+    margin-right: 15px;
+    color: white;
+    font-size: 20px;
+}
+#phone {
+    margin-right:auto;
+    color: white;
+    font-size: 18px;
+    padding-left:35%;
+    margin-top: 8px;
+}
+
+#button {
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+    border-radius: 34px;
+    padding:10px 10px;
+    margin-left: 10px; /* Creates space between the phone number and the button */
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#button:hover {
+    opacity: 0.9;
+}
+
+
+.BotNav {
+    height: 50px;
+    width: 100%;
+    font-family: 'Varela Round', sans-serif;
+    background-color: rgba(255, 255, 255, 0.9);
+
+
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    list-style-type: none;
+}
+
+.flex li {
+    margin-top: 12px;
+    padding-left: 10px;
+    padding-right: 15px;
+    font-weight: 800;
+}
+
+/* .flex li:hover{
+    background-color:rgb(255, 216, 44);
+    width:auto;
+    height: 50px;
+    position: static;
+
+} */
+
+#searchicon {
+    display: flex;
+    margin-top: 15px;
+    margin-left: 10px;
+    height: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#searchicon:hover {
+    background-color: black;
+    color: white;
+
+}
+
+#searchBar {
+
+    display: flex;
+    margin-top: 12px;
+    margin-left: 10px;
+    border-radius: 10px;
+    justify-content: center;
+    text-align: center;
+
+}
+
+#logo {
+    margin-top: 12px;
+    margin-right: 20px;
+
+}
+
+.brand {
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 8px;
+    margin-right: 25px;
+    text-transform: uppercase;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+
+    min-height: 65vh;
+    background-color: black;
+    color: white;
+    font-family: 'Varela Round', sans-serif;
+    display: flex;
+
+    padding-bottom: 20px;
+
+    padding: 34px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-image: url(img/header_bg.png);
+}
+
+.text-overlay {
+
+
+    text-align: center;
+    color: white;
+}
+
+.main-text {
+    margin-top: 80;
+    font-size: 40px;
+    margin: 20px 0;
+}
+
+.small-text {
+    font-size: 18px;
+}
+
+/* General styles */
+.headBar {
+    background: linear-gradient(90deg, rgb(250, 141, 7), rgb(232, 9, 158));
+    /* Gradient background */
+    padding: 20px;
+    color: white;
+}
+
+.detailsBar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.detailsBar i {
+    margin-right: 20px;
+    /* Space between icons and text */
+}
+
+.detailsBar li {
+    margin: 0 5px;
+    /* Space between list items */
+    font-size: 18px;
+    font-weight:bolder;
+}
+
+.detailsBarChild {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+    /* Margin to separate from the top bar */
+    flex-wrap: wrap;
+    /* Ensures wrapping in smaller screens */
+}
+
+.detailsBarChild li {
+    width: 30%;
+    /* Set width for each text item */
+    text-align: center;
+    font-size: 16px;
+    font-weight:400;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .detailsBar {
+        flex-direction: column;
+        /* Stack icons and text vertically on smaller screens */
+        align-items: flex-start;
+        /* Align to the left */
+    }
+
+    .detailsBarChild {
+        flex-direction: column;
+        /* Stack text items vertically */
+        align-items: flex-start;
+        /* Align to the left */
+    }
+
+    .detailsBarChild li {
+        width: 100%;
+        /* Full width on smaller screens */
+        margin-bottom: 10px;
+        /* Space between items */
+    }
+
+    .detailsBar i {
+        margin-bottom: 10px;
+        /* Space below icons */
+    }
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('img/mainBg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.mainContent {
+    width:100%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.mainContent .about-us {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.mainContent .about-us .text-content {
+    width: 50%;
+}
+
+.mainContent .about-us h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.mainContent .about-us h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.mainContent .about-us p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.mainContent .about-us .read-more {
+    text-decoration: none;
+    color: #fff;
+    background-color: #ff4a4a;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.mainContent .about-us .image-content img {
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+}
+
+.mainContent .our-services {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.mainContent .our-services h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.mainContent .services-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.mainContent .service {
+    flex-basis: 40%;
+    padding: 15px;
+    text-align: center;
+}
+
+.mainContent .service img {
+    width: 100%;
+    height: auto;
+    max-width: 150px;
+    margin-bottom: 15px;
+}
+.mainContent .services-container{
+    justify-content: space-between;
+}
+
+.mainContent .service h3 {
+    font-size: 18px;
+}
